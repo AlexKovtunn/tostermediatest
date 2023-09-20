@@ -1,0 +1,61 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+// ШРИФТУЛИ
+@font-face {
+	font-family: "Gotham Pro";
+	src: url("../fonts/GothamPro.woff2") format("truetype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Gotham Pro";
+	src: url("../fonts/GothamPro-Medium.woff2") format("truetype");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Gotham Pro";
+	src: url("../fonts/GothamPro-Bold.woff2") format("truetype");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "SF Pro";
+	src: url("../fonts/SFProDisplay-Regular.woff2") format("truetype");
+	font-weight: 400;
+}
+
+html, body{
+	height: 100%;
+	font-family: Gotham Pro;
+	color: #2C2B31;
+	font-weight: 400;
+	line-height: normal;
+	font-style: normal;
+	background-color: #ffffff;
+
+	scroll-behavior: smooth;
+
+	position: relative;
+}
+
+.body__overflow{
+	overflow-y: hidden;
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+	max-width: 386px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.none{
+	display: none !important;
+	-webkit-display: none !important;
+	-moz-display: none !important;
+	-ms-display: none !important;
+}

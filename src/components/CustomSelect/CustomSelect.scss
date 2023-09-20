@@ -1,0 +1,53 @@
+.custom-select{
+    width: 100%;
+    position: relative;
+}
+.custom-select__btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    span{
+        font-size: 21.69px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    img{
+        position: absolute;
+        right: 9px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    border-radius: 15px;
+    background-color: #fff;
+
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.custom-select__dropdown{
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    padding: 15px 9px 15px 35px;
+}
+.custom-select__dropdown-item{
+    color: #000;
+    font-family: 'SF Pro';
+    font-size: 12px;
+
+    cursor: pointer;
+
+    padding: 4px 0;
+
+    &::first-letter{
+        text-transform: uppercase;
+    }
+}

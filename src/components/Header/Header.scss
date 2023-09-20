@@ -1,0 +1,43 @@
+.header__top{
+    background: #F19D2F;
+}
+.header__top-text{
+    text-align: center;
+    font-size: 12.694px;
+    
+    font-weight: 400;
+    text-transform: uppercase;
+
+    padding: 11px 0;
+}
+.header__bottom{
+    background: #FFD1AC;
+    padding: 19px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__bottom-logo{
+    margin-bottom: 7px;
+    position: relative;
+    &:after{
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 54px;
+        top: 8px;
+        background-color: #F19D2F;
+        border-radius: 50%;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+.header__bottom-text{
+    text-align: center;
+    font-size: 13.469px;
+}

@@ -1,0 +1,140 @@
+.model{
+    padding: 11px 0 41px;
+    background: #F0F0F0;
+}
+.model__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12.067px;
+}
+.model__header-best{
+    color: #37D997;
+    text-decoration-line: underline;
+}
+
+.model__about{
+    padding: 20px 0;
+}
+.model__about-title{
+    font-size: 19.168px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+.pictures{
+    margin-bottom: 20px;
+}
+.pictures__main{
+    border-radius: 20px;
+
+   img{
+    width: 100%;
+    border-radius: 20px;
+
+    opacity: 0;
+    transition: opacity 1s;
+
+    &.show{
+        opacity: 1;
+    }
+   }
+
+   margin-bottom: 20px;
+}
+.pictures__add{
+    display: flex;
+
+    margin: 0 -6px;
+}
+.pictures__add-pic{
+    cursor: pointer;
+
+    padding: 0 6px;
+    border-radius: 10px;
+
+    img{
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+.pictures__add-pic.opacity{
+    opacity: 0.4;
+}
+
+.model__about-desc{
+    font-size: 15.29px;
+    color: #000;
+
+    margin-bottom: 12px;
+
+    span{
+        font-weight: 700;
+    }
+}
+
+.model__about-reviews{
+    display: flex;
+    align-items: center;
+
+    span{
+        font-size: 15.29px;
+        margin-top: -2px;
+    }
+}
+.model__about-stars{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.model__about-star{
+    &:not(:last-child){
+        margin-right: 4px;
+    }
+}
+
+.model__form{
+
+}
+.model__form-selects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+.model__form-input{
+    width: 100%;
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span{
+        text-align: center;
+        font-size: 10px;
+
+        margin-bottom: 4px;
+    }
+
+    &:first-child{
+        margin-right: 5px;
+    }
+}
+
+.model__form-submit{
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 15px;
+    background: #37D997;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase; 
+
+    &:hover{
+        background: #2fb881;
+    }
+}

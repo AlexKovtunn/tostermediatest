@@ -1,0 +1,74 @@
+.hero{
+    background-image: url('../../assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 281px;
+
+    display: flex;
+    align-items: flex-end;
+
+    .container{
+        width: 100%;
+    }
+}
+.hero__flex{
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 14px;
+
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.hero__timer{
+    padding: 10px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7.101px;
+    background: #F19D2F; 
+}
+.hero__timer-offer{
+    font-size: 10.599px;
+}
+.hero__timer-time{
+    margin-top: 5px;
+ 
+    font-size: 21.254px;
+}
+.hero__price{
+    border-radius: 5.677px;
+    background: #37D997; 
+
+    align-items: center;
+    padding: 6.5px 7px 5.5px;
+}
+.hero__price-prev{
+    font-size: 18.077px;
+
+    position: relative;
+
+    &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3.5px;
+        background: #E27500;
+        position: absolute;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.hero__price-current{
+    font-size: 22.301px;
+}
